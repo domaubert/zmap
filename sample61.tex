@@ -232,22 +232,25 @@
 %% the nearby authors are not part of surrounding collaborations.
 
 %% Mark off the abstract in the ``abstract'' environment. 
+%\begin{abstract}
+%The Reionization as experienced by galaxies is a diverse and heterogeneous process. We probe this diversity by presenting predictions of the Reionization times of z=0 galaxies, made using simulations. The  $z>6$  epoch is described using the CODA~I-AMR radiative hydrodynamics simulation produced with the EMMA code.
+%%that models self-consistently the evolution of the gas ionisation state until the end of the first billion years of the Universe. This simulation has been 
+%%produced with the AMR code EMMA %and deployed on 32768 CPU cores and 4096 GPUs on Titan. 
+%High-redshift predictions are projected 13 billions years later using a pure dark matter Gadget simulation with the same set of CLUES initial conditions that include a Local Group analog. In both cases the $(64 \mathrm{Mpc/h})^3$ volume is sampled with 8 billions initial resolution elements,  allowing to probe z=0 halos in the $10^8-10^{13} M_\odot$ range. 
+%
+%We find that current galaxies with $M_{z=0}>10^{11} M_\odot$ were on average  reionized up to $\sim 500$ millions years earlier than the Universe as a whole.
+%%\since the progenitors of these objects form in the high peaks of the density field
+%%resulting from these objects being the hosts of the first sources. 
+%The scatter in Reionization times can be significant and Milky-Way like galaxies can have $z>6$ progenitors reionized as early as z=15 and as late as z=8. Less massive objects ($<10^{11} M_\odot$) are typically reionized at the same time as the overall volume or even later : this lag can be attributed to dark objects that require external radiation to complete their reionization. Measures of the reionization durations within halos show that the time required to reionize galaxies can be as large as the halo-to-halo fluctuations of reionization times. 
+%
+%Finally, we find that the Local Group was not influenced by an external sweeping ionization front. The Milky Way and M31 analogs of our simulation reionized respectively at z=9.8 and z=11, without influencing each other.
+%\end{abstract}
+
+
 \begin{abstract}
-The Reionization as experienced by galaxies is a diverse and heterogeneous process. We probe this diversity by presenting predictions of the Reionization times of z=0 galaxies environments, made using simulations. The  $z>6$  epoch is described using the CODA~I-AMR radiative hydrodynamics simulation produced with the EMMA code.
-%that models self-consistently the evolution of the gas ionisation state until the end of the first billion years of the Universe. This simulation has been 
-%produced with the AMR code EMMA %and deployed on 32768 CPU cores and 4096 GPUs on Titan. 
-High-redshift predictions are projected 13 billions years later using a pure dark matter Gadget simulation with the same set of CLUES initial conditions that include a Local Group analog. In both cases the $(64 \mathrm{Mpc/h})^3$ volume is sampled with  
-%$2048^3\sim 8\times 10^9$ 
-8 billions initial resolution elements,  allowing to probe z=0 halos in the $10^8-10^{13} M_\odot$ range. 
+The progenitors of today’s galaxies experienced cosmic reionization at different times in different parts of the universe, since reionization was inhomogeneous in time and space.  The common assumption that reionization occurred in the neighborhood of these galaxies at the same universal redshift for all galaxies is re-examined here.  We match present-day galaxies with the reionization redshifts of the intergalactic medium at the locations of their progenitors by combining the results of a new, fully-coupled radiation-hydrodynamics simulation of galaxy formation and reionization to redshift 6 with an N-body simulation to the present from the same initial conditions. These initial conditions were pre-selected to form the well-known structures of the local universe, including the Local Group and the Virgo cluster, in a (91 Mpc)$^3$ volume, large enough to model both global reionization and its local history.  The reionization simulation, CoDa I-AMR, by a new, hybrid CPU-GPU code EMMA used (2048)$^3$ dark matter particles and (2048)$^3$ initial cells, adaptively-refined, while the N-body simulation, CoDa I-DM2048,  by Gadget2 used (2048)$^3$ particles, allowing us to study the reionization times of all the galaxies in this volume at z = 0 in the mass range from $10^8$ to $10^13 M_\odot$.  
 
-We find that current galaxies with $M_{z=0}>10^{11} M_\odot$ were on average  reionized up to $\sim 500$ millions years earlier than the Universe as a whole.
-%\since the progenitors of these objects form in the high peaks of the density field
-%resulting from these objects being the hosts of the first sources. 
-The scatter in Reionization times can be significant and Milky-Way like galaxies can have $z>6$ progenitors reionized as early as z=15 and as late as z=8. Less massive objects ($<10^{11} M_\odot$) are typically reionized at the same time as the overall volume or even later : this lag can be attributed to dark objects that require external radiation to complete their reionization. Measures of the reionization durations within halos show that the time required to reionize galaxies can be as large as the halo-to-halo fluctuations of reionization times. 
-
-Finally, we find that the Local Group was not influenced by an external sweeping ionization front. The Milky Way and M31 analogs of our simulation reionized respectively at z=9.8 and z=11, without influencing each other.
-
-
+	The progenitors of galaxies more massive than $\sim 10^11 M_\odot$ today were found to reionize earlier than the universe as a whole, by as much as ~ 500 Myrs.  The scatter in this reionization time was significant. The progenitors of Milky-Way-like galaxies, for example, showed reionization redshifts that range from z = 8 to z = 15, while the global (mean) reionization redshift was $\langle z_reion\rangle$ = 6 (??).  For galaxies less massive than $10^11 M_\odot$ today, however, progenitors typically reionized as late or even later than the global reionization time, corresponding to neighborhoods in which reionization was completed by external radiation from more distant sources.  The duration of the reionization transition in a progenitor’s neighborhood was also found to be substantial, as large as the range of reionization times for different galaxies.  As for the Local Group, the progenitors of the Milky Way and M31 both reionized before the global reionization redshift; two methods used to determine their reionization redshifts yield different answers,  z = 9.8 (MW) and 11 (M31) or z = 8.2 (both), and neither reionization was dominated by external radiation.
 \end{abstract}
 
 %% Keywords should appear after the \end{abstract} command. 
@@ -271,9 +274,9 @@ Finally, we find that the Local Group was not influenced by an external sweeping
 %% to the KEY in the \bibitem in the reference list below. 
 
 \section{Introduction}
-The emergence of a UV background during the Reionization sets the thermal and ionisation state of the intergalactic medium. It can also suppress star formation in the progenitors of galaxies through photo-heating especially for low-mass objects below $10^9 M_\odot$. Accordingly, reconstructed star formation histories of the faintest dwarf galaxies indicate that the Reionization slowed down the build up of their stellar populations (see e.g. \citet{BROWN14}). Likewise recent radiative hydrodynamics simulations could reproduce this suppression in large high resolution simulations \citep{OCV16}. 
+The emergence of a UV background during the Reionization sets the thermal and ionisation state of the intergalactic medium. It also suppresses star formation in the progenitors of galaxies through photo-heating especially low-mass objects below $10^9 M_\odot$. Accordingly, reconstructed star formation histories of the faintest dwarf galaxies indicate that the Reionization slowed down the build up of their stellar populations (see e.g. \citet{BROWN14}). Likewise recent radiative hydrodynamics simulations could reproduce this suppression in large high resolution simulations \citep{OCV16}. 
 
-However, the Reionization is not a uniform and instantaneous process: the structure of the density field translate into an heterogeneous distribution of radiation sources and absorbers. Different patches and objects in the Universe do not reionize at the same time, but have widely ranging reionization redshifts. 
+However, the Reionization is not a uniform and instantaneous process: the structure of the density field translates into an heterogeneous distribution of sources and absorbers. Different patches and objects in the Universe do not reionize at the same time, but have widely ranging reionization redshifts. 
 %For instance, Ly-$\alpha$ forest data suggest that the spatial fluctuations of the UV field remain important even after the overlap, possibly originating in the density field (e.g. \citet{DAV16}), temperature fluctuations (e.g. \citet{ALO15}) or the presence of bright UV sources (e.g. \citet{CHA15}).
 
 The timing of the Reionization can have an impact on e.g. the satellite populations of z=0 galaxies (see e.g. \citet{KOP9,BUS10,OCV11,ILI11,OCV14,GIL15})
@@ -295,7 +298,7 @@ We first present our set of simulations and the analysis performed. We then desc
 \section{Methods}
 
 \subsection{Initial Conditions}
-The initial conditions were created by the CLUES collaboration and assume a WMAP 5 cosmology ($\Omega_m=0.279, \Omega_v=0.721, H_0=70$ km/s/Mpc, \citet{HIN9}). They cover a $64$ Mpc/h comoving volume with a $2048^3$ grid cells and particles.  The initial phases were chosen to produce an analog of the Local Universe at z=0 (see \citet{GOT10},\citet{ILI11}) providing a Milky Way (MW)- M31 pair with the right mass range and separation in the proper large scale environment. These choices were motivated by future comparisons with the CODA I simulation \citep{OCV16}.
+The CLUES initial conditions used here assume a WMAP 5 cosmology ($\Omega_m=0.279, \Omega_v=0.721, H_0=70$ km/s/Mpc, \citet{HIN9}). They cover a $64$ Mpc/h comoving volume with $2048^3$ grid cells and particles.  The initial phases were chosen to produce an analog of the Local Universe at z=0 (see \citet{GOT10},\citet{ILI11}) providing a Milky Way (MW)- M31 pair with the right mass range and separation in the proper large scale environment. These choices were motivated by future comparisons with the CODA I simulation \citep{OCV16}.
 
 \subsection{Simulations}
 The $z>6$ predictions of this project were produced by the AMR simulation code EMMA \citep{AUB15}. It tracks the coupled collisionless dynamics, hydrodynamics and radiative transfer and includes standard sub-grid models for star formation and supernovae feedback (\citet{RAS06},\citet{DEP17}, in prep.). 
@@ -323,7 +326,8 @@ The CODA I-AMR simulation stopped at $z=6$: it presents a reionization epoch con
 %\subsection{z=0 Pure dark matter predictions}
 
 The properties of z=0 halos are obtained from a pure dark-matter Gadget simulation \citep{SPR5}, using the same initial conditions. %The mass resolution is identical to the radiative hydrodynamics simulation with a smoothing length corresponding to $1/20$ of the mean interparticle distance. 
-Halos were identified using a FOF algorithm with a 0.2 linking length and minimal number of particles of 10, leading to $\sim 20$ millions structures identified at z=0. The smallest FOF objects detected in the Gadget simulation weighs $2.4\times 10^7 M_\odot$. Merger trees were also produced to connect z=0 halos to their progenitors during the EoR. These $z\gg 0$ progenitors do not necessarily exist and only the most massive z=0 halos have a progenitor identified $13\times 10^9$ years earlier : $10^6$  z=0 objects have an identified progenitor at z=6. Alternatively, all z=0 halos can be traced back to the Reionization using their particles which are uniquely identified. 
+Halos were identified using a FOF algorithm with a 0.2 linking length and minimal number of particles of 10, leading to $\sim 20$ millions structures identified at z=0. The smallest FOF objects detected in the Gadget simulation weighs $2.4\times 10^7 M_\odot$. Merger trees were also produced to connect z=0 halos to their progenitors during the EoR. 
+%These $z\gg 0$ progenitors do not necessarily exist and only the most massive z=0 halos have a progenitor identified $13\times 10^9$ years earlier : $10^6$  z=0 objects have an identified progenitor at z=6. Alternatively, all z=0 halos can be traced back to the Reionization using their particles which are uniquely identified. 
 
 %Describe the $2048^3$ Gadget simulation with new phases ...
 
@@ -333,6 +337,9 @@ Halos were identified using a FOF algorithm with a 0.2 linking length and minima
 Reionization maps are built from the ionisation state of  hydrogen : this quantity is computed self-consistently in CODA I-AMR and we define the reionization time as the  instant when a cell crosses  the 0.5 ionized fraction threshold for the first time.  The end result is a 3D field, $t_\mathrm{reion}(x,y,z)$, sampled using $2048^3$ pixels corresponding to the base resolution of our simulations (see Fig. \ref{fig:reion_halo_map}). When compared to the Gadget halo distribution at z=6,  a clear correlation can be seen with the CODA I-AMR reionization map : \dom{halos are found at the center of ionization patches and their spatial distribution matches the topology of $t_\mathrm{reion}(x,y,z)$}.
 
 This map is computed on the fly by EMMA with a time resolution driven by hydrodynamical processes. However due  to memory management issues, this procedure had to be stopped at z=8 and reionization redshifts were computed from snapshots for the latest stages of the Reionization. At worse the time resolution is 1.4 Myrs at z=6.
+
+Because $t_\mathrm{reion}(x,y,z)$  does not resolve scales that can be self-shielded,  'galaxy reionization times' should conservatively be understood as 'galaxy environment' times hereafter. Likewise assigning a $t_\mathrm{reion}$ to a galaxy is in fact assigning this value to patch surrounding this object.
+
 
 %\begin{figure*}[ht]
 %\plotone{img/ZmapX512.pdf}
@@ -366,13 +373,12 @@ where $\vec x_\mathrm{mmR}$ is the center-of-mass position of the most massive p
 %The merger-trees and the 3D field reionization time being available, $t_\mathrm{reion}$ is easily obtained. 
 %However it implies that 
 A halo is assigned a Reionization time only if it has a progenitor at $z>6$: this is not the case for halos that emerged after $z=6$ or not detected by the FOF. %It's the case $\sim 10^8 M_\odot$ halos with only a few particles. 
-However this procedure guarantees that $t_\mathrm{prog}$ is set by material already in place in the structure by $z>6$. Also 'galaxy reionization times' should conservatively be understood as 'galaxy environment' times, as self-shielded regions could be neutral within a cell.
-
+However this procedure guarantees that $t_\mathrm{prog}$ is set by material already in place in the structure by $z>6$. 
 
 %Given our resolution, we cannot guarantee that a galaxy is fully reionized as some regions may be self-shielded at small scales : these 'galaxy reionization' times should rather be understood as the reionization times of 'galactic environment'.
 % and is not too much diluted by matter added during the next 13 billions years.
 
-\subsection{Particle-based prediction}
+\subsection{Particle-based predictions}
 This set of predictions is based on the halo-membership of each DM particle at z=0. %(see Fig. \ref{fig:methods}.)
  Once the list of particles that belong to a z=0 halo is established, their positions at $z>6$ can be traced-back from snaphots and each particle is then being assigned a reionization time: it is defined as the earliest time $t(z_R)$ at which a particle belongs to an ionized cell in the reionization map . An average particle-based $\langle t_\mathrm{part} \rangle$  is assigned to each halo:
 \begin{equation}
@@ -382,7 +388,7 @@ where $\vec x_\mathrm{p0}$ and $\vec x_\mathrm{pR}$ are the $z=0$ and $z=z_R$ pa
 
 This procedure is more difficult to set up as it requires to cross-match $8\times 10^9$ DM particles with $\sim 20\times 10^6$ z=0 halos  to assign particles to their halos. 
 %Once this membership is obtained, particles must be recovered in z=6 snaphots and being assigned a reionization redshift from $t_\mathrm{reion}$ using the same nearest-grid point technique used for progenitor-based prediction.
-However this technique can assign a reionization time to all z=0 haloes, even the smallest ones. On the other hand, these reionization times drift to later times since diffuse material, presumably reionized at later times and/or  accreted after the Reionization, is taken into account. 
+However this technique assigns reionization times to all z=0 haloes, even the smallest ones. On the other hand, these reionization times drift to later times since diffuse material, presumably reionized at later times and/or  accreted after the Reionization, is taken into account. 
  
 %\begin{figure}[ht]
 %\plotone{img/method.pdf}
@@ -425,7 +431,7 @@ The full volume reaches $x_{HI}=0.5$ at $z\sim 7.8$ (dashed line). %Reionization
 
 The Reionization times of z=0 halos are shown in Fig. \ref{fig:treion}. Depending on the methodology used, galaxies with $M_{z=0}>10^{11} h^{-1}M_\odot$ reionize up to $500$ Myrs earlier than the full volume. In this mass range, the more massive the galaxies, the earlier they are reionized as expected since they host intense sources or are close to them in dense environments. At the lower masses ($M_{z=0}<10^{11} h^{-1}M_\odot$) the Reionization time becomes typically consistent with the global one.  The median time is slightly later than the global one : objects among this population are faint or even star-less and must be externally reionized. Being dense, it takes more time to reionize them than for the IGM.  Nevertheless, the scatter is significant from halo to halo ($\sim 250$ Myrs 5\%-95\% percentile).
 
-The two methodologies return consistent results but with differences. The progenitor-based technique guarantees that an object is already present at high z : it returns the reionization redshift of the oldest material of a z=0 halo, thus explaining why it consistently returns lower $t_\mathrm{reion}$. On the other hand it requires that objects detectable by means of FOF pre-exist at $z>6$, biasing the sample of halos:  a $10^8 h^{-1} M_\odot$ halo at z=0  must have peculiar accretion rates to have a $z>6$ progenitor and still be light at z=0. The dip in reionization times at the low mass end confirms this and  by eye inspection, these objects are located in high-density regions, thus explaining their low $t_\mathrm{reion}$. It could also indicate that these objects were more massive in the past and were stripped : these low-mass objects are being assigned $t_\mathrm{reion}$ typical of more massive objects.
+The two methodologies return consistent results but with differences. The progenitor-based technique guarantees that an object is already present at high z : it returns the reionization redshift of the oldest material of a z=0 halo, thus explaining why it consistently returns lower $t_\mathrm{reion}$. On the other hand it requires that FOF objects pre-exist at $z>6$, biasing the sample of halos:  a $10^8 h^{-1} M_\odot$ halo at z=0  must have peculiar accretion rates to have a $z>6$ progenitor and still be light at z=0. The dip in reionization times at the low mass end confirms this and  by eye inspection, these objects are located in high-density regions, thus explaining their low $t_\mathrm{reion}$. It could also indicate that these objects were more massive in the past and were stripped : these low-mass objects are being assigned $t_\mathrm{reion}$ typical of more massive objects.
 
 The particle-based methodology suffers less from this bias because all z=0 halos are considered~: the $t_\mathrm{reion}$ dip at the low-mass end disappears. However, it returns lower reionization redshifts for $M_{z=0}>10^{11} M_\odot$, resulting from  a fraction of material in halos at z=0 that was part of the diffuse matter in the IGM and was reionized at later times.
 
@@ -457,9 +463,9 @@ Using the particles reionization times, we can investigate the intrinsic reioniz
 
 $\Delta t_{2\sigma}$ increases with the halo mass with typical values of $\sim 120$ Myrs for $M_{z=0}>10^{11} h^{-1} M_\odot$. For $10^{12} h^{-1} M_\odot$, reionization durations as long as 180 Myrs or as short as 60 Myrs can be found. \citet{OCV14} made similar measurements on subhaloes of M31-MW analogs and the current results are consistent with their SPH model that shares a similar emissivity for the sources: the 120 Myrs duration found here is typical of their Reionization in isolation models, where an inside-out Reionization proceeds from the inner regions of a galaxy to its outskirts. Meanwhile the shortest $\Delta t_{2\sigma}=60$ Myrs values are typical of their external reionization scenario, where a nearby bright source 'flashes' the object. The scatter seen here would be a reflection of diverse environmental properties.
 
-For $M_{z=0}>10^{11}h^{-1} M_\odot$, the typical values found for $\Delta t_{2\sigma}$ are comparable to the halo-to-halo scatter of $t_\mathrm{reion}$ and are likely to be lower bound values since self-shielding is not fully taken into account at our resolution. It's consistent with findings of \citet{ALV9} and \citet{LI14} for more massive objects. Consequently taking into account the variety of Reionization times to model the star formation in these halos should consider that within a halo the Reionization is not instantaneous. 
+For $M_{z=0}>10^{11}h^{-1} M_\odot$, the typical values found for $\Delta t_{2\sigma}$ are comparable to the halo-to-halo scatter of $t_\mathrm{reion}$ and are likely to be lower bound values since self-shielding is not fully taken into account at our resolution. It's consistent with findings of \citet{ALV9} and \citet{LI14} for more massive objects. Within a halo the Reionization is not instantaneous~: it should be accounted by any model that includes the impact of local Reionization histories on stellar populations. 
 
-At low mass end, $M_{z=0}<10^{11}h^{-1} M_\odot$, objects have $\Delta t_{2\sigma}\sim 0$. It corresponds to the extreme case of fast external reionizations or objects small enough to fit within a single cell of the Reionization map (the $30 h^{-1}$ comoving kpc resolution corresponds to the virial radius of a $\sim 10^9 h^{-1} M_\odot$ halo). The scatter increases toward the low mass end: this objects sampled with a small number of particles (40 for $10^8 h^{-1} M_\odot$) are poorly resolved by the AMR RT code. Their radiative environment is not fully captured, with greater errors in the estimate of $\Delta t_{2\sigma}$.
+At low mass end, $M_{z=0}<10^{11}h^{-1} M_\odot$, objects have $\Delta t_{2\sigma}\sim 0$. It corresponds to the extreme case of fast external reionizations or objects small enough to fit within a single cell of the Reionization map (the $30 h^{-1}$ comoving kpc resolution corresponds to the virial radius of a $\sim 10^9 h^{-1} M_\odot$ halo). The scatter increases toward the low mass end but these objects sampled with a small number of cells or particles (40 particles for $10^8 h^{-1} M_\odot$) are poorly resolved by the AMR code. Their radiative environment history is not fully captured, with greater errors in the estimate of $\Delta t_{2\sigma}$.
 % : as already mentioned for $t_\mathrm{reion}$ it could be due to 'stripped objects' which are being assigned $\Delta t$ typical of more massive halos. Another explanation could be tied to the small number of particles (40 for $10^8 h^{-1} M_\odot$) in such haloes, leading to greater errors in the estimate of $\sigma$.
 
 Note that $\Delta t_{2\sigma}$ is an estimate of the duration to reionize most of the particles but time differences within a halo can be even greater.The time difference $\Delta t_\mathrm{max-min}$ between the first and the last particle to reionize is also given in Fig. \ref{fig:treion}. The most massive halos in our sample can have $\Delta t_\mathrm{max-min}=600$ Myrs and thus contain material that saw its environment reionize at very different stages.% of the Reionization.
@@ -484,7 +490,7 @@ Lighter haloes have shorter $\Delta t_\mathrm{max-min}$ with $\Delta t_\mathrm{m
 
 The CLUES ICs contain an analog of the LG with two galaxies similar to the MW ($M_{z=0}=7.7\times 10^{11} h^{-1} M_\odot$) and M31 ($M_{z=0}=1.7 \times 10^{12} h^{-1} M_\odot$) in the proper large-scale environment.
 
-Fig. \ref{fig:LG} shows the z=10.8 positions of their progenitors within the reionization map. The MW environment reionized in a compact fashion. Meanwhile M31 reionization pattern consists in several disconnected islands, reflecting the complex and extended distribution of progenitors at these times. Both objects reionized in isolation relative to each other: the patches are easily identified and disconnected. They also reionized in isloation relative to the environment, as no reionization front seems to sweep the region.
+Fig. \ref{fig:LG} shows the z=10.8 positions of their progenitors within the reionization map. The MW environment reionized in a compact fashion. Meanwhile M31 reionization pattern consists in several disconnected islands, reflecting the complex and extended distribution of progenitors at these times. Both objects reionized in isolation relative to each other: the patches are easily identified and disconnected. They also reionized in isolation relative to the environment, as no front seems to sweep the region.
 
 In fig. \ref{fig:treion}, their reionization times and durations are shown for each of the estimators. According to the progenitor-based method, M31 environment reionized earlier($z=11$) than for MW ($z=9.8$), in accordance with the measured trend where more massive haloes start their reionization earlier. Meanwhile the particle-based method indicates that both objects reionized at the same time, at $z=8.2$: since these two objects are spatially close, it is not surprising that their lagrangian environments reionized simultaneously. For both estimators, these two galaxies are typical of their respective class of masses, albeit on the 'late reionization' side of the distribution. 
 
